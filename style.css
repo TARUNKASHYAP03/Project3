@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: work sans;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+}
+
+#nav {
+  height: 70px;
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+#nav1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+.gola {
+  height: 18px;
+  width: 18px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+#nav2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+#nav2 h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#nav2 h4 span {
+  color: gray;
+  margin-left: 20px;
+}
+
+#navpart1 {
+  height: 65px;
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 0 40px;
+}
+
+#navpart1 h3 {
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+#content {
+  height: calc(100% - 135px);
+  width: 100%;
+  /* background-color: green; */
+}
+
+#textc {
+  height: 50%;
+  width: 100%;
+  background-color: rgb(183, 188, 129);
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+#textc::-webkit-scrollbar {
+  background-color: rgba(0, 0, 0, 0); /* Semi-transparent background */
+  height: 7px;
+}
+
+#textc::-webkit-scrollbar-thumb {
+  background-color: rgba(232, 68, 3, 0.956); /* Semi-transparent thumb */
+}
+
+.elem {
+  flex-shrink: 0;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.elem h1 {
+  font-size: 110px;
+  font-weight: 300;
+}
+
+#image{
+    width: 100%;
+    height: 49.8%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+#image::-webkit-scrollbar{
+    display: none;
+}
+
+#image img{
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 23%;
+}
